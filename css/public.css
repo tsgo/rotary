@@ -1,28 +1,10 @@
 @charset "UTF-8";
-*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: 12px; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; background-color: whitesmoke; }
+/*
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 - 2019, Ginkgo
+ * @license     http://opensource.org/licenses/MIT  MIT License
+ * @link        https://www.ioa.tw/
+ */
 
-header { display: inline-block; width: 100%; height: 44px; background-color: #344d93; *zoom: 1; padding: 0 15px; }
-header:after { display: table; content: ""; line-height: 0; clear: both; }
-header h1 { display: inline-block; font-size: 1rem; color: white; }
-header a { display: inline-block; float: left; text-decoration: none; color: white; font-size: 1rem; line-height: 44px; }
-header a:before { display: inline-block; content: '\e90f'; font-family: icon; font-size: 1rem; }
-
-p { display: inline-block; padding: 0; margin: 0; }
-
-.cent { display: inline-block; width: 100%; padding: 20px 15px; }
-.cent > div { display: inline-block; width: 100%; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin-bottom: 20px; }
-.cent > div:after { display: table; content: ""; line-height: 0; clear: both; }
-.cent > div:last-child { margin-bottom: 0; }
-.cent > div .d_boxs { display: inline-block; width: 100%; padding: 15px 10px; border-bottom: 1px solid rgba(102, 102, 102, 0.5); text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); }
-.cent > div .d_boxs:last-child { border-bottom: 0; }
-.cent > div .d_boxs:before { display: inline-block; width: 30%; content: attr(title); font-size: 1rem; color: #344d93; font-weight: 600; }
-@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .d_boxs:before { width: 40%; } }
-.cent > div .name { display: inline-block; color: #344d93; font-weight: 600; font-size: 1rem; float: left; padding: 15px 0 15px 10px; }
-.cent > div .member_id { display: inline-block; font-size: .9rem; color: #666666; float: left; margin-top: 2px; padding: 15px 0; }
-.cent > div .member_id:before { display: inline-block; content: '/'; font-size: .9rem; color: rgba(102, 102, 102, 0.8); margin: 0 5px; }
-.cent > div .phone { display: inline-block; font-size: 1rem; color: #666666; float: right; padding: 15px 0; }
-@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .phone { float: left; padding: 0 0 15px 10px; } }
-.cent > div a { display: inline-block; background-color: #344d93; float: right; width: 25px; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; text-decoration: none; padding: 18px 0 12px 0; margin-left: 5px; font-size: 1rem; color: rgba(255, 255, 255, 0.5); height: 100%; overflow: hidden; }
-@media screen and (max-width: 324px) and (min-width: 0) { .cent > div a { padding: 35px 0 32px 0; } }
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: 12px; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; background-color: whitesmoke; }header { display: inline-block; width: 100%; height: 44px; background-color: #344d93; *zoom: 1; padding: 0 15px; }header:after { display: table; content: ""; line-height: 0; clear: both; }header h1 { display: inline-block; font-size: 1rem; color: white; }header a { display: inline-block; float: left; text-decoration: none; color: white; font-size: 1rem; line-height: 44px; }header a:before { display: inline-block; content: '\e90f'; font-family: icon; font-size: 1rem; }p { display: inline-block; padding: 0; margin: 0; }.cent { display: inline-block; width: 100%; padding: 20px 15px; }.cent > div { display: inline-block; width: 100%; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin-bottom: 20px; }.cent > div:after { display: table; content: ""; line-height: 0; clear: both; }.cent > div:last-child { margin-bottom: 0; }.cent > div .d_boxs { display: inline-block; width: 100%; padding: 15px 10px; border-bottom: 1px solid rgba(102, 102, 102, 0.5); text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); }.cent > div .d_boxs:last-child { border-bottom: 0; }.cent > div .d_boxs:before { display: inline-block; width: 30%; content: attr(title); font-size: 1rem; color: #344d93; font-weight: 600; }@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .d_boxs:before { width: 40%; } }.cent > div .name { display: inline-block; color: #344d93; font-weight: 600; font-size: 1rem; float: left; padding: 15px 0 15px 10px; }.cent > div .member_id { display: inline-block; font-size: .9rem; color: #666666; float: left; margin-top: 2px; padding: 15px 0; }.cent > div .member_id:before { display: inline-block; content: '/'; font-size: .9rem; color: rgba(102, 102, 102, 0.8); margin: 0 5px; }.cent > div .phone { display: inline-block; font-size: 1rem; color: #666666; float: right; padding: 15px 0; }@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .phone { float: left; padding: 0 0 15px 10px; } }.cent > div a { display: inline-block; background-color: #344d93; float: right; width: 25px; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; text-decoration: none; padding: 18px 0 12px 0; margin-left: 5px; font-size: 1rem; color: rgba(255, 255, 255, 0.5); height: 100%; overflow: hidden; }@media screen and (max-width: 324px) and (min-width: 0) { .cent > div a { padding: 35px 0 32px 0; } }
