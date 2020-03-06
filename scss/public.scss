@@ -270,7 +270,7 @@ body {
 }
 .cover {
   display: inline-block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left:  -100%;
   background-color: rgba(49, 57, 64, .5);

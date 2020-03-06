@@ -3,9 +3,15 @@
 $(function() {
 
     // 手機選單
-  $('.menu, .menu_boxs .icon-cross2').click(function() {
-    $('.menu_boxs').toggleClass ('hovermenu');
-    $('.cover').toggleClass('show');
+  $('.menu').click(function() {
+    $('.menu_boxs').addClass ('hovermenu');
+    $('.cover').addClass('show');
+    scrollLock();
+  });
+  $('.menu_boxs .icon-cross2').click(function() {
+    $('.menu_boxs').removeClass ('hovermenu');
+    $('.cover').removeClass('show');
+    scrollUnlock();
   });
 
   $('.threeMenu').click(function() {
