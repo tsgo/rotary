@@ -26,69 +26,77 @@ body {
   // @include selection(rgba(120, 186, 255, 1.00), rgba(255, 255, 255, 1));
 }
 
-
-header {
+.mainUser {
   display: inline-block;
   width: 100%;
-  height: 44px;
-  background-color: rgba(52, 77, 147, 1.00);
-  @include clearfix();
-  padding: 0 15px;
-  
-  h1 {
-    display: inline-block;
-    font-size: 1rem;
-    color: white;
-  }
+  min-height: 100vh;
 
-  a {
-    display: inline-block;
-    float: left;
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    line-height: 44px;
-
-    &:before {
-      display: inline-block;
-      content: '\e90f';
-      font-family: icon;
-      font-size: 1rem;
-    }
-  }
-}
-
-p{
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.cent {
-  display: inline-block;
-  width: 100%;
-  padding: 20px 15px;
-
-  > div {
+  header {
     display: inline-block;
     width: 100%;
-    background-color: white;
-    @include border-radius(4px);
+    height: 44px;
+    background-color: rgba(52, 77, 147, 1.00);
     @include clearfix();
-    margin-bottom: 20px;
-
-    &:last-child {
-      margin-bottom: 0;
+    padding: 0 15px;
+    
+    h1 {
+      display: inline-block;
+      font-size: 1rem;
+      color: white;
     }
 
-    .all_a {
+    a {
+      display: inline-block;
+      float: left;
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      line-height: 44px;
+
+      &:before {
+        display: inline-block;
+        content: '\e90f';
+        font-family: icon;
+        font-size: 1rem;
+      }
+    }
+
+    .icon-menu2 {
+      display: inline-block;
+      color: white;
+      font-size: 1rem;
+      line-height: 44px;
+      float: right;
+    }
+  }
+
+  p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cent {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 15px;
+
+    > div, .all_a {
       display: inline-block;
       width: 100%;
-      text-decoration: none;
+      background-color: white;
+      @include border-radius(4px);
+      @include clearfix();
+      margin-bottom: 20px;
 
+      text-decoration: none;
       &:hover, &:active {
         border: 3px solid rgba(52, 77, 147, 1.00);
         @include border-radius(4px);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
 
       .d_boxs {
@@ -175,12 +183,105 @@ p{
           padding: 35px 0 32px 0;
         }
       }
-
     }
   }
 }
+ 
+// 側選單・開始
+.menu_boxs {
+  display: none;
+  width: 200px;
+  height: 100%;
+  z-index: 3;
 
+  position: absolute;
+  top: 0;
+  right: -200px;
 
+  background-color: rgba(225, 234, 239, 1.00);
+  @include transition(all .3s);
+  @include clearfix();
 
+  &.hovermenu {
+    display: inline-block;
+    right: 0;
+  }
+
+  &.goback {
+    right: -200px;
+  }
+
+  .lastMenu, .threeMenu {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom:1px solid white;
+    text-align: left;
+    font-size: 1rem;
+    color: #555555;
+    text-decoration: none;
+    @include transition(all .3s);
+    font-weight: 600;
+
+    &:first-child {
+      padding: 0 10px;
+    }
+
+    &.otherMenu{
+      padding-left: 30px;
+      border-bottom: 1px dotted white;
+
+      &:last-child{
+        border-bottom:1px solid white;
+      }
+    }
+    
+    &.icon-cross2 {
+      font-size: 1rem;
+      line-height: 44px;
+      color: rgba(45, 68, 136, 1.00);
+      font-weight: 600;
+      text-align: right;
+    }
+
+    &:hover {
+      color: rgba(0, 183, 234, 1.00);
+    }
+  }
+
+  .threeMenu {
+    &:after {
+      display: inline-block;
+      content: '\e90a';
+      font-family: 'icomoon';
+      font-size: 1.2rem;
+      float: right;
+    }
+  }
+
+  .lastMenu_boxs {
+    display: none;
+    width: 100%;
+
+    &.showMenu {
+      display: inline-block;
+    }
+  }
+}
+.cover {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left:  -100%;
+  background-color: rgba(49, 57, 64, .5);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &.show {
+    left: 0;
+  }
+}
+// 側選單・結束
 
 
