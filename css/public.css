@@ -15,14 +15,16 @@ p { display: inline-block; padding: 0; margin: 0; }
 .cent > div { display: inline-block; width: 100%; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin-bottom: 20px; }
 .cent > div:after { display: table; content: ""; line-height: 0; clear: both; }
 .cent > div:last-child { margin-bottom: 0; }
-.cent > div .d_boxs { display: inline-block; width: 100%; padding: 15px 10px; border-bottom: 1px solid rgba(102, 102, 102, 0.5); text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); }
-.cent > div .d_boxs:last-child { border-bottom: 0; }
-.cent > div .d_boxs:before { display: inline-block; width: 30%; content: attr(title); font-size: 1rem; color: #344d93; font-weight: 600; }
-@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .d_boxs:before { width: 40%; } }
-.cent > div .name { display: inline-block; color: #344d93; font-weight: 600; font-size: 1rem; float: left; padding: 15px 0 15px 10px; }
-.cent > div .member_id { display: inline-block; font-size: .9rem; color: #666666; float: left; margin-top: 2px; padding: 15px 0; }
-.cent > div .member_id:before { display: inline-block; content: '/'; font-size: .9rem; color: rgba(102, 102, 102, 0.8); margin: 0 5px; }
-.cent > div .phone { display: inline-block; font-size: 1rem; color: #666666; float: right; padding: 15px 0; }
-@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .phone { float: left; padding: 0 0 15px 10px; } }
-.cent > div a { display: inline-block; background-color: #344d93; float: right; width: 25px; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; text-decoration: none; padding: 18px 0 12px 0; margin-left: 5px; font-size: 1rem; color: rgba(255, 255, 255, 0.5); height: 100%; overflow: hidden; }
-@media screen and (max-width: 324px) and (min-width: 0) { .cent > div a { padding: 35px 0 32px 0; } }
+.cent > div .all_a { display: inline-block; width: 100%; text-decoration: none; }
+.cent > div .all_a:hover, .cent > div .all_a:active { border: 3px solid #344d93; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.cent > div .all_a .d_boxs { display: inline-block; width: 100%; padding: 15px 10px; border-bottom: 1px solid rgba(102, 102, 102, 0.5); text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); }
+.cent > div .all_a .d_boxs:last-child { border-bottom: 0; }
+.cent > div .all_a .d_boxs:before { display: inline-block; width: 30%; content: attr(title); font-size: 1rem; color: #344d93; font-weight: 600; }
+@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .all_a .d_boxs:before { width: 40%; } }
+.cent > div .all_a .name { display: inline-block; color: #344d93; font-weight: 600; font-size: 1rem; float: left; padding: 15px 0 15px 10px; }
+.cent > div .all_a .member_id { display: inline-block; font-size: .9rem; color: #666666; float: left; margin-top: 2px; padding: 15px 0; }
+.cent > div .all_a .member_id:before { display: inline-block; content: '/'; font-size: .9rem; color: rgba(102, 102, 102, 0.8); margin: 0 5px; }
+.cent > div .all_a .phone { display: inline-block; font-size: 1rem; color: #666666; float: right; padding: 15px 0; }
+@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .all_a .phone { float: left; padding: 0 0 15px 10px; } }
+.cent > div .all_a i { display: inline-block; background-color: #344d93; float: right; width: 25px; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; padding: 18px 0 12px 0; margin-left: 5px; font-size: 1rem; color: rgba(255, 255, 255, 0.5); height: 100%; overflow: hidden; font-style: normal; }
+@media screen and (max-width: 324px) and (min-width: 0) { .cent > div .all_a i { padding: 35px 0 32px 0; } }
