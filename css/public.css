@@ -28,7 +28,7 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .mainUser .cent > div i, .mainUser .cent .all_a i { display: inline-block; background-color: #344d93; float: right; width: 25px; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; padding: 18px 0 12px 0; margin-left: 5px; font-size: 1rem; color: rgba(255, 255, 255, 0.5); height: 100%; overflow: hidden; font-style: normal; }
 @media screen and (max-width: 324px) and (min-width: 0) { .mainUser .cent > div i, .mainUser .cent .all_a i { padding: 35px 0 32px 0; } }
 
-.menu_boxs { display: none; width: 200px; height: 100%; z-index: 3; position: absolute; top: 0; right: -200px; background-color: #e1eaef; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; *zoom: 1; }
+.menu_boxs { display: none; width: 200px; height: 100%; z-index: 3; position: fixed; top: 0; right: -200px; background-color: #e1eaef; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; *zoom: 1; }
 .menu_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
 .menu_boxs.hovermenu { display: inline-block; right: 0; }
 .menu_boxs.goback { right: -200px; }

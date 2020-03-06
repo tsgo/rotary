@@ -13,7 +13,7 @@ $(function() {
     $(this).next().toggleClass ('showMenu');
   });
 
-  // 手機選單模式，背景資訊鎖定
+  // // 手機選單模式，背景資訊鎖定
   function scrollLock () {
     var scrollPosition = [
       self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
