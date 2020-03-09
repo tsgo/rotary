@@ -39,4 +39,6 @@ $(function() {
     window.scrollTo(scrollPosition[0], scrollPosition[1]);
   }
 
+  $(".column").imgLiquid ();
+
 });

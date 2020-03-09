@@ -81,7 +81,7 @@ body {
     width: 100%;
     padding: 20px 15px;
 
-    > div, .all_a {
+    .cebt_boxs, .all_a {
       display: inline-block;
       width: 100%;
       background-color: white;
@@ -92,7 +92,14 @@ body {
 
       &.no_border {
         &:hover, &:active {
-          border: 0;
+          display: none;
+        }
+      }
+
+      &.grey_border {
+        border: 1px solid rgba(173, 173, 173, .5);
+        &:hover, &:active {
+          display: none;
         }
       }
 
@@ -129,6 +136,16 @@ body {
           @include range-width(0, 325px) {
             width: 40%;
           }
+        }
+
+        span {
+          display: inline-block;
+          width: 100%;
+          padding: 10px 0;
+          text-align: left;
+          font-size: 1rem;
+          color: rgba(102, 102, 102, .8); 
+          line-height: 1.4rem;
         }
 
         .d_pdf {
@@ -182,7 +199,7 @@ body {
 
         &.date {
           font-size: .9rem;
-          padding-left: 10px;
+          padding-right: 10px;
         }
 
         @include range-width(0, 325px) {
@@ -213,6 +230,24 @@ body {
           padding: 35px 0 32px 0;
         }
       }
+    }
+
+    .photo_data {
+      display: inline-block;
+      width: 100%;
+      font-size: .9rem;
+      color: rgba(173, 173, 173, 1);
+      text-align: left;
+    }
+
+    .photo_title {
+      display: inline-block;
+      width: 100%;
+      font-size: 1rem;
+      color: rgba(52, 77, 147, 1.00);
+      text-align: left;
+      font-weight: 600;
+      padding: 10px 0;
     }
   }
 }
