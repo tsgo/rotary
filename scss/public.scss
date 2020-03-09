@@ -88,8 +88,14 @@ body {
       @include border-radius(4px);
       @include clearfix();
       margin-bottom: 20px;
-
       text-decoration: none;
+
+      &.no_border {
+        &:hover, &:active {
+          border: 0;
+        }
+      }
+
       &:hover, &:active {
         border: 3px solid rgba(52, 77, 147, 1.00);
         @include border-radius(4px);
@@ -122,6 +128,21 @@ body {
 
           @include range-width(0, 325px) {
             width: 40%;
+          }
+        }
+
+        .d_pdf {
+          display: inline-block;
+          color: rgba(102, 102, 102, .8);
+          font-size: 1rem;
+          text-decoration: none;
+
+          &:before {
+            display: inline-block;
+            content: '\e904';
+            font-family: 'icomoon';
+            font-size: 1rem;
+            margin-right: 5px;
           }
         }
       }
@@ -159,9 +180,18 @@ body {
         float: right;
         padding: 15px 0;
 
+        &.date {
+          font-size: .9rem;
+          padding-left: 10px;
+        }
+
         @include range-width(0, 325px) {
+          display: inline-block;
+          width: 85%;
+          font-size: .9rem;
           float: left;
           padding: 0 0 15px 10px;
+          text-align: left;
         }
       }
 

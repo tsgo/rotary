@@ -14,17 +14,21 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .mainUser .cent { display: inline-block; width: 100%; padding: 20px 15px; }
 .mainUser .cent > div, .mainUser .cent .all_a { display: inline-block; width: 100%; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin-bottom: 20px; text-decoration: none; }
 .mainUser .cent > div:after, .mainUser .cent .all_a:after { display: table; content: ""; line-height: 0; clear: both; }
+.mainUser .cent > div.no_border:hover, .mainUser .cent > div.no_border:active, .mainUser .cent .all_a.no_border:hover, .mainUser .cent .all_a.no_border:active { border: 0; }
 .mainUser .cent > div:hover, .mainUser .cent > div:active, .mainUser .cent .all_a:hover, .mainUser .cent .all_a:active { border: 3px solid #344d93; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .mainUser .cent > div:last-child, .mainUser .cent .all_a:last-child { margin-bottom: 0; }
 .mainUser .cent > div .d_boxs, .mainUser .cent .all_a .d_boxs { display: inline-block; width: 100%; padding: 15px 10px; border-bottom: 1px solid rgba(102, 102, 102, 0.5); text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); }
 .mainUser .cent > div .d_boxs:last-child, .mainUser .cent .all_a .d_boxs:last-child { border-bottom: 0; }
 .mainUser .cent > div .d_boxs:before, .mainUser .cent .all_a .d_boxs:before { display: inline-block; width: 30%; content: attr(title); font-size: 1rem; color: #344d93; font-weight: 600; }
 @media screen and (max-width: 324px) and (min-width: 0) { .mainUser .cent > div .d_boxs:before, .mainUser .cent .all_a .d_boxs:before { width: 40%; } }
+.mainUser .cent > div .d_boxs .d_pdf, .mainUser .cent .all_a .d_boxs .d_pdf { display: inline-block; color: rgba(102, 102, 102, 0.8); font-size: 1rem; text-decoration: none; }
+.mainUser .cent > div .d_boxs .d_pdf:before, .mainUser .cent .all_a .d_boxs .d_pdf:before { display: inline-block; content: '\e904'; font-family: 'icomoon'; font-size: 1rem; margin-right: 5px; }
 .mainUser .cent > div .name, .mainUser .cent .all_a .name { display: inline-block; color: #344d93; font-weight: 600; font-size: 1rem; float: left; padding: 15px 0 15px 10px; }
 .mainUser .cent > div .member_id, .mainUser .cent .all_a .member_id { display: inline-block; font-size: .9rem; color: #666666; float: left; margin-top: 2px; padding: 15px 0; }
 .mainUser .cent > div .member_id:before, .mainUser .cent .all_a .member_id:before { display: inline-block; content: '/'; font-size: .9rem; color: rgba(102, 102, 102, 0.8); margin: 0 5px; }
 .mainUser .cent > div .phone, .mainUser .cent .all_a .phone { display: inline-block; font-size: 1rem; color: #666666; float: right; padding: 15px 0; }
-@media screen and (max-width: 324px) and (min-width: 0) { .mainUser .cent > div .phone, .mainUser .cent .all_a .phone { float: left; padding: 0 0 15px 10px; } }
+.mainUser .cent > div .phone.date, .mainUser .cent .all_a .phone.date { font-size: .9rem; padding-left: 10px; }
+@media screen and (max-width: 324px) and (min-width: 0) { .mainUser .cent > div .phone, .mainUser .cent .all_a .phone { display: inline-block; width: 85%; font-size: .9rem; float: left; padding: 0 0 15px 10px; text-align: left; } }
 .mainUser .cent > div i, .mainUser .cent .all_a i { display: inline-block; background-color: #344d93; float: right; width: 25px; -moz-border-radius: 0 4px 4px 0; -webkit-border-radius: 0; border-radius: 0 4px 4px 0; padding: 18px 0 12px 0; margin-left: 5px; font-size: 1rem; color: rgba(255, 255, 255, 0.5); height: 100%; overflow: hidden; font-style: normal; }
 @media screen and (max-width: 324px) and (min-width: 0) { .mainUser .cent > div i, .mainUser .cent .all_a i { padding: 35px 0 32px 0; } }
 
