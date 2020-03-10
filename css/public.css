@@ -25,7 +25,7 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 @media screen and (max-width: 324px) and (min-width: 0) { .mainUser .cent .cebt_boxs .d_boxs:before, .mainUser .cent .all_a .d_boxs:before { width: 40%; } }
 .mainUser .cent .cebt_boxs .d_boxs span, .mainUser .cent .all_a .d_boxs span { display: inline-block; width: 100%; padding: 10px 0; text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); line-height: 1.4rem; }
 .mainUser .cent .cebt_boxs .d_boxs .d_pdf, .mainUser .cent .all_a .d_boxs .d_pdf { display: inline-block; color: rgba(102, 102, 102, 0.8); font-size: 1rem; text-decoration: none; }
-.mainUser .cent .cebt_boxs .d_boxs .d_pdf:before, .mainUser .cent .all_a .d_boxs .d_pdf:before { display: inline-block; content: '\e904'; font-family: 'icomoon'; font-size: 1rem; margin-right: 5px; }
+.mainUser .cent .cebt_boxs .d_boxs .d_pdf:before, .mainUser .cent .all_a .d_boxs .d_pdf:before { display: inline-block; content: '\e904'; font-family: 'icon'; font-size: 1rem; margin-right: 5px; margin-top: 3px; }
 .mainUser .cent .cebt_boxs .name, .mainUser .cent .all_a .name { display: inline-block; color: #344d93; font-weight: 600; font-size: 1rem; float: left; padding: 15px 0 15px 10px; }
 .mainUser .cent .cebt_boxs .member_id, .mainUser .cent .all_a .member_id { display: inline-block; font-size: .9rem; color: #666666; float: left; margin-top: 2px; padding: 15px 0; }
 .mainUser .cent .cebt_boxs .member_id:before, .mainUser .cent .all_a .member_id:before { display: inline-block; content: '/'; font-size: .9rem; color: rgba(102, 102, 102, 0.8); margin: 0 5px; }
