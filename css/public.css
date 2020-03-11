@@ -14,9 +14,9 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .mainUser .cent { display: inline-block; width: 100%; padding: 20px 15px; }
 .mainUser .cent .cebt_boxs, .mainUser .cent .all_a { display: inline-block; width: 100%; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin-bottom: 20px; text-decoration: none; }
 .mainUser .cent .cebt_boxs:after, .mainUser .cent .all_a:after { display: table; content: ""; line-height: 0; clear: both; }
-.mainUser .cent .cebt_boxs.no_border:hover, .mainUser .cent .cebt_boxs.no_border:active, .mainUser .cent .all_a.no_border:hover, .mainUser .cent .all_a.no_border:active { display: none; }
+.mainUser .cent .cebt_boxs.no_border:hover, .mainUser .cent .cebt_boxs.no_border:active, .mainUser .cent .all_a.no_border:hover, .mainUser .cent .all_a.no_border:active { border: 0; }
 .mainUser .cent .cebt_boxs.grey_border, .mainUser .cent .all_a.grey_border { border: 1px solid rgba(173, 173, 173, 0.5); }
-.mainUser .cent .cebt_boxs.grey_border:hover, .mainUser .cent .cebt_boxs.grey_border:active, .mainUser .cent .all_a.grey_border:hover, .mainUser .cent .all_a.grey_border:active { display: none; }
+.mainUser .cent .cebt_boxs.grey_border:hover, .mainUser .cent .cebt_boxs.grey_border:active, .mainUser .cent .all_a.grey_border:hover, .mainUser .cent .all_a.grey_border:active { border: 1px solid rgba(173, 173, 173, 0.5); }
 .mainUser .cent .cebt_boxs:hover, .mainUser .cent .cebt_boxs:active, .mainUser .cent .all_a:hover, .mainUser .cent .all_a:active { border: 3px solid #344d93; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .mainUser .cent .cebt_boxs:last-child, .mainUser .cent .all_a:last-child { margin-bottom: 0; }
 .mainUser .cent .cebt_boxs .d_boxs, .mainUser .cent .all_a .d_boxs { display: inline-block; width: 100%; padding: 15px 10px; border-bottom: 1px solid rgba(102, 102, 102, 0.5); text-align: left; font-size: 1rem; color: rgba(102, 102, 102, 0.8); }
